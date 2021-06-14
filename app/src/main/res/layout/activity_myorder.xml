@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myorder_tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/prim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/myorder_backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_ios_icon"
+            android:layout_marginLeft="5dp"
+            android:onClick="backMyorder"
+            android:background="#00000000"/>
+
+        <TextView
+            android:id="@+id/myorder_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Orders"
+            android:gravity="center"
+            android:layout_marginRight="50dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp">
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myorder_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myorder_tool"/>
+
+
+</RelativeLayout>

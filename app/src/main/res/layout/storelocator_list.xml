@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/store_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_location_on_24"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="20dp">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/store_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SKYLAND STORE"
+        android:textSize="17sp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/store_image"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/store_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9832 Edgewwod Road towncity, NJ 07080"
+        android:textStyle="normal"
+        android:textColor="#4f4f4f"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/store_image"
+        android:layout_below="@id/store_name"
+        android:layout_marginLeft="10dp"/>
+
+    <View
+        android:id="@+id/verticalline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EDEDED"
+        android:layout_below="@id/store_address"
+        android:layout_marginTop="22dp"/>
+
+</RelativeLayout>

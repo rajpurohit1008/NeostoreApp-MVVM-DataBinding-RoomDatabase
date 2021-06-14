@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="#ededed">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/productdetailtool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/prim"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/product_backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_ios_icon"
+                android:layout_marginLeft="5dp"
+                android:background="#00000000"
+                android:onClick="backproduct"/>
+
+            <TextView
+                android:id="@+id/tooltitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6 Seater Dining Table"
+                android:gravity="center"
+                android:layout_marginRight="50dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp">
+
+            </TextView>
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/product_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productdetailtool">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6 Seater Dining Table for family"
+                    android:textStyle="normal"
+                    android:textColor="#262626"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="15dp"
+                    android:textSize="22sp">
+                </TextView>
+                <TextView
+                    android:id="@+id/product_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Category - Tables"
+                    android:layout_below="@id/product_name"
+                    android:paddingLeft="15dp"
+                    android:textSize="18sp"
+                    android:textColor="#4f4f4f">
+                </TextView>
+                <TextView
+                    android:id="@+id/product_producer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Future Furniture Center"
+                    android:layout_below="@id/product_category"
+                    android:paddingLeft="15dp"
+                    android:textColor="#4f4f4f"
+                    android:textSize="11dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="15dp">
+                </TextView>
+
+                <RatingBar
+                    android:id="@+id/product_ratingbar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="68dp"
+
+                    android:layout_marginRight="30dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:progressTint="#FFBA00"
+                    android:progressBackgroundTint="#4F4F4F"
+                    android:stepSize="0.1"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/product_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@id/product_data">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/product_price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. 27,390"
+                    android:textSize="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="15dp"
+                    android:textColor="@color/red">
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/sharebutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/share_icon"
+                    android:backgroundTint="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:onClick="shareOnclick">
+
+                </ImageButton>
+
+                <ImageView
+                    android:id="@+id/firstimage"
+                    android:layout_width="771px"
+                    android:layout_height="534px"
+                    android:src="@drawable/slider_img1"
+                    android:layout_below="@id/sharebutton"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp">
+                </ImageView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/firstimage"
+                    >
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </RelativeLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/desription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_images"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:id="@+id/descptn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DESCRIPTION"
+                    android:textColor="#111111"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:padding="10dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/product_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/descptn"
+                    android:text="sjkdjskdksjdkjskdjskdjksjdksjkdjsksjdkjskdjskjdksjdksjkskjdksjdkjsk"
+                    android:textSize="15sp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="3dp">
+                </TextView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desription"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buynowbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BUY NOW"
+                    android:onClick="buynowonclick"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/red"
+                    android:textColor="@color/white"
+                    android:paddingLeft="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1">
+
+                </Button>
+                <Button
+                    android:id="@+id/ratebutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RATE"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#bfbfbf"
+                    android:textColor="#7F7F7F"
+                    android:paddingLeft="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="15dp"
+                    android:paddingRight="15dp"
+                    android:onClick="ratingOnclick">
+
+                </Button>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NeoStore App</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="checkbox"><![CDATA[I agree the Terms & Conditions]]></string>
+    <string-array name="numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string name="title_activity_store_locator">Map</string>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp">
+
+    <ImageView
+        android:id="@+id/imageView_mycart"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        tools:srcCompat="@tools:sample/avatars"
+        android:padding="10dp"/>
+    <TextView
+        android:id="@+id/mycart_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageView_mycart"
+        android:text="Prebroke"
+        android:textColor="#1C1C1C"
+        android:textSize="50px"
+        android:padding="15dp"/>
+    <TextView
+        android:id="@+id/mycart_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageView_mycart"
+        android:text="(Table)"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/mycart_title" />
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/mycart_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageView_mycart"
+        android:layout_below="@+id/mycart_category"
+        android:padding="15dp"/>
+    <TextView
+        android:id="@+id/mycart_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹ 45.00"
+        android:layout_toRightOf="@+id/mycart_spinner"
+        android:layout_below="@id/mycart_category"
+        android:textSize="20sp"
+        android:layout_marginLeft="100dp"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/mycart_title"
+        android:src="@drawable/delete_icon"
+        android:background="@drawable/backgroundcircle"
+        android:padding="2dp"
+        android:onClick="deleteMycart"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"/>
+
+
+</RelativeLayout>

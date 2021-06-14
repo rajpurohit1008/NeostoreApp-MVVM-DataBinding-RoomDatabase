@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/quantitytitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:text="madan Rajpurohit"
+        android:textColor="#2C2B2B"
+        android:textSize="75px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/quantity_image"
+        android:layout_width="772px"
+        android:layout_height="534px"
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/slider_img1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quantitytitle" />
+
+    <TextView
+        android:id="@+id/quantity_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:text="Enter Qty"
+        android:textColor="#2C2B2B"
+        android:textSize="60px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quantity_image" />
+
+    <EditText
+        android:id="@+id/quantity_ET"
+        android:layout_width="336px"
+        android:layout_height="129px"
+        android:layout_marginTop="66px"
+        android:inputType="number"
+        android:background="@drawable/rectanglebackgroundshape"
+        android:outlineSpotShadowColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quantity_TV" />
+
+    <Button
+        android:id="@+id/quantity_button"
+        android:layout_width="595px"
+        android:layout_height="142px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/red"
+        android:text="SUBMIT"
+        android:layout_marginTop="66px"
+        android:layout_marginBottom="150px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quantity_ET"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

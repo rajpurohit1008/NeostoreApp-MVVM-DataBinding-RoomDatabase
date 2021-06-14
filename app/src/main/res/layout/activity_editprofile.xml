@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fe3f3f"
+        android:layout_weight="1"
+        tools:context=".viewactivity.EditprofileActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/registertool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/prim"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/editprofilebackbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_ios_icon"
+                android:layout_marginLeft="5dp"
+                android:onClick="backeditprofile"
+                android:background="#00000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:gravity="center"
+                android:layout_marginRight="50dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp">
+
+            </TextView>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/editprofileimage"
+                android:layout_width="152dp"
+                android:layout_height="152dp"
+                android:src="@drawable/slider_img1"
+                android:layout_gravity="center"></de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/edit_initial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SV"
+                android:visibility="invisible"
+                android:textSize="60sp"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true">
+
+            </TextView>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editprofilefirstname"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="38dp"
+            android:textColor="@color/white"
+            android:background="@drawable/outerborder"
+            android:drawableLeft="@drawable/username_icon"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:id="@+id/editprofilelastname"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="38dp"
+            android:textColor="@color/white"
+            android:background="@drawable/outerborder"
+            android:drawableLeft="@drawable/username_icon"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:id="@+id/editprofileemail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="38dp"
+            android:textColor="@color/white"
+            android:background="@drawable/outerborder"
+            android:drawableLeft="@drawable/email_icon"
+            android:ems="10"
+            android:drawablePadding="5dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:id="@+id/editprofilephonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="38dp"
+            android:background="@drawable/outerborder"
+            android:drawableLeft="@drawable/ic_smartphone"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingLeft="10dp"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:id="@+id/editprofiledob"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="38dp"
+            android:background="@drawable/outerborder"
+            android:drawableLeft="@drawable/cake_icon"
+            android:ems="10"
+            android:focusable="false"
+            android:textColor="@color/white"
+            android:hint="Date of Birth"
+            android:drawablePadding="5dp"
+            android:paddingLeft="10dp"
+            android:textColorHint="#ffffff" />
+
+        <Button
+            android:id="@+id/editprofileeditprofilebtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:text="SUBMIT"
+            android:textColor="@color/red"
+            android:textSize="22sp" />
+
+
+    </LinearLayout>
+</layout>

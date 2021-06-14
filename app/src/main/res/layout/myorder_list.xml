@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/orderi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order ID : "
+        android:textColor="#1c1c1c"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="22sp"/>
+
+    <TextView
+        android:id="@+id/order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 15879"
+        android:textSize="18sp"
+        android:textColor="#1c1c1c"
+        android:layout_toRightOf="@id/orderi"
+        android:layout_marginTop="22sp"
+        android:layout_marginBottom="11dp"/>
+
+    <View
+        android:id="@+id/verticalline"
+        android:layout_width="175dp"
+        android:layout_height="0.9dp"
+        android:background="#EDEDED"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="11dp"
+        android:layout_below="@id/order_id"/>
+
+    <TextView
+        android:id="@+id/orderdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ordered Date : "
+        android:textColor="#4f4f4f"
+        android:textSize="13sp"
+        android:layout_below="@id/verticalline"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/order_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="07 Aug'15"
+        android:textSize="13sp"
+        android:textColor="#4f4f4f"
+        android:layout_below="@id/verticalline"
+        android:layout_toRightOf="@id/orderdate"
+        android:layout_marginBottom="22dp"/>
+
+    <TextView
+        android:id="@+id/order_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹ 45.00"
+        android:textColor="#333333"
+        android:textSize="22sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"/>
+
+    <View
+        android:id="@+id/verticallin1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EDEDED"
+        android:layout_below="@id/order_date"/>
+
+
+
+</RelativeLayout>

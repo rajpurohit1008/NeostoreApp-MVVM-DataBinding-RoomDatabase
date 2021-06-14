@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:background="#1C1A1A"
+    android:gravity="bottom|center"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:src="@drawable/round_circle"
+            android:id="@+id/homeimage_profile"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/white"
+            tools:ignore="MissingClass">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+     <TextView
+            android:id="@+id/header_initial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SV"
+            android:visibility="invisible"
+            android:textSize="60sp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true">
+        </TextView>
+    </RelativeLayout>
+
+<!--    <ImageView-->
+<!--        android:layout_width="95dp"-->
+<!--        android:layout_height="95dp"-->
+<!--        android:layout_marginLeft="95dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:src="@drawable/imageicon"-->
+<!--        android:background="@drawable/circle">-->
+
+<!--    </ImageView>-->
+    <TextView
+        android:id="@+id/currentname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Madan Rajpurohit"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/currentemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Madan.Rajpurohit@neosoftmail.com"
+        android:textColor="@color/white"
+        android:layout_marginBottom="15dp"
+        android:textSize="14sp">
+
+    </TextView>
+
+</LinearLayout>
